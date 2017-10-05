@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+<header>
+    <div class="header-inner">
+    <div class="left-space">
+    </div>
+    <div class="header-items">
+        <nav>
+            <ul>
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Challenge</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header-right">
+
+        <img id="profile-picture" src="images/profile-picture.png"/>
+        <p>Olivia Wilde</p>
+    </div>
+    </div>
+</header>
+<main>
+    <div class="main-header">
+        <div class="week-progress">
+            <h5>Your 12 week progress</h5>
+            <div>
+
+            </div>
+        </div>
+        <div class="week-count">
+
+            <img src="images/arrow-left.png" height="44" width="26" onclick="plusDivs(-1)"/>
+
+
+            <h2 class="slider">Week 1</h2>
+            <h2 class="slider">Week 2</h2>
+            <h2 class="slider">Week 3</h2>
+            <h2 class="slider">Week 4</h2>
+            <img src="images/arrow-right.png" height="44" width="26" onclick="plusDivs(+1)"/>
+
+            <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(n) {
+            showDivs(slideIndex += n);
+            }
+
+            function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("slider");
+            if (n > x.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = x.length} ;
+            for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+            }
+            x[slideIndex-1].style.display = "block";
+            }
+             </script>
+        </div>
+        <div class="protein-option">
+            <h5>Select your protein options</h5>
+            <div class="protein-icons">
+                <img src="images/protein-option1.png" style="padding: 13px 13px 0px 0px"/>
+                <img src="images/protein-option2.png" style="padding: 15px 16px 0px 0px"/>
+                <img src="images/protein-option3.png" style="padding: 14px 17px 0px 0px"/>
+                <img src="images/protein-option41.png" style="padding: 12px 12px 0px 0px"/>
+                <img src="images/protein-option51.png" style="padding-top: 13px",/>
+            </div>
+        </div>
+    </div>
+    <div class="main-table">
+
+
+        <table class="table">
+            <tr>
+                <th rowspan="2" class="pattern days"><span><span style="font-weight: bold">6:00</span>AM</span></th>
+                <th class="days">day 64</th>
+                <th class="days">day 65</th>
+                <th class="days">day 66</th>
+                <th class="days">day 67</th>
+                <th class="days">day 68</th>
+                <th class="days">day 69</th>
+                <th class="days">day 70</th>
+            </tr>
+            <tr class="yogurt">
+                <td id="exclude1">Bod•ē Shake<img src="images/tick.png" style="padding: 8px 6px 0px 0px"><img src="images/drink10.png" width="85px" height="57px"></td>
+                <td>Bod•ē Shake<img src="images/drink10.png" width="85px" height="57px"></td>
+                <td>Bod•ē Shake<img src="images/drink10.png" width="85px" height="57px"></td>
+                <td>Bod•ē Shake<img src="images/drink10.png" width="85px" height="57px"></td>
+                <td>Bod•ē Shake<img src="images/drink10.png" width="85px" height="57px"></td>
+                <td>Bod•ē Shake<img src="images/drink10.png" width="85px" height="57px"></td>
+                <td rowspan="5"></td>
+            </tr>
+            <tr>
+                <td class="pattern"><span style="font-weight: bold">9:00</span>AM</td>
+                <td>Ham and <img src="images/tick.png" style="padding: 8px 6px 0px 0px">Swiss Roll Ups</td>
+                <td>Ham and Swiss Roll Ups</td>
+                <td>Grilled Steak (HC)</td>
+                <td>Ham and Swiss
+                    Roll Ups</td>
+                <td>Ham and Swiss
+                    Roll Ups</td>
+                <td>Grilled Steak
+                    (HC)</td>
+            </tr>
+            <tr>
+                <td class="pattern"><span style="font-weight: bold">12:00</span>PM</td>
+                <td>Turkey Melt<img src="images/tick.png" style="padding: 8px 6px 0px 0px"></td>
+                <td>Turkey Melt</td>
+                <td>Bod•ē Shake</td>
+                <td>Turkey Melt</td>
+                <td>Bod•ē Shake</td>
+                <td>Bod•ē Shake</td>
+            </tr>
+            <tr>
+                <td class="pattern"><span style="font-weight: bold">3:00</span>PM</td>
+                <td>Bod•ē Burn<img src="images/png" style="padding: 8px 6px 0px 0px">
+                    with Mozzarella
+                    and Tomato
+                    Slices</td>
+                <td>Bod•ē Burn with
+                    Mozzarella and
+                    Tomato Slices</td>
+                <td>Bod•ē Burn and
+                    Whole-Wheat
+                    English Muffin
+                    with Butter Spray</td>
+                <td>Bod•ē Burn with
+                    Mozzarella and
+                    Tomato Slices</td>
+                <td>Bod•ē Burn with
+                    Mozzarella and
+                    Tomato Slices</td>
+                <td>Bod•ē Burn and
+                    Whole-Wheat
+                    English Muffin
+                    with Butter Spray</td>
+            </tr>
+            <tr>
+                <td rowspan="2" class="pattern"><span style="font-weight: bold">6:00</span>PM</td>
+                <td>Turkey Melt</td>
+                <td>Turkey Melt</td>
+                <td>Garlic Lime
+                    Chicken (HC)</td>
+                <td>Turkey Melt</td>
+                <td>Turkey Melt</td>
+                <td>Garlic Lime
+                    Chicken (HC)</td>
+            </tr>
+            <tr class="short">
+                <td id="exclude2">LOW-CARB</td>
+                <td>LOW-CARB</td>
+                <td>HIGH-CARB</td>
+                <td>LOW-CARB</td>
+                <td>LOW-CARB</td>
+                <td>HIGH-CARB</td>
+
+                <td rowspan="2">Print</td>
+            </tr>
+            <tr class="short">
+                <td class="pattern">Workout</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+</main>
+<footer>
+    <div>
+        <h4>Running out of products?</h4>
+        <p>Lorem ipsum dolor sit amet, consect</p>
+        <button>Buy now</button>
+    </div>
+    <div>
+        <h4>Bode Trainer in your pocket</h4>
+        <p>Lorem ipsum dolor sit amet, consect</p>
+        <button>iOS</button>
+        <button>Android</button>
+    </div>
+    <div>
+        <h4>Frequently Asked Questions</h4>
+        <p>Lorem ipsum dolor sit amet, consect</p>
+        <button>Read FAQs</button>
+    </div>
+</footer>
+</body>
+</html>
