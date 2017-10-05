@@ -1,6 +1,6 @@
 body {
     background-color: #f9f9f9;
-    font-family: Helvetica Neue LT Std, Helvetica, sans-seriff;
+    font-family: "Helvetica", "Arial", sans-serif;
 
 }
 
@@ -110,15 +110,6 @@ main {
 
 }
 
-
-
-
-
-
-
-
-
-
 .week-count img {
     padding-top: 38px;
 
@@ -136,7 +127,7 @@ main {
     padding-top: 38px;
     padding-bottom: 36px;
     padding-left: 46px;
-    padding-right:42px;
+    padding-right: 42px;
 
 }
 
@@ -172,8 +163,7 @@ main {
     height: 90px;
     word-wrap: break-word;
 
-    font-family: Arial, sans-serif;
-    font-size: 13px;
+    font: 13px "Arial";
     color: #828282;
     border-style: solid;
     border-width: 2px;
@@ -186,9 +176,7 @@ main {
 
 .table th {
     width: 80px;
-    font-family: Helvetica Neue LT Std, sans-serif;
-    font-size: 24px;
-
+    font: 24px "Helvetica";
     text-transform: uppercase;
     background-color: #fff;
     color: #adbb0c;
@@ -205,9 +193,8 @@ main {
 }
 
 .table th:first-child {
-    width: 80px
-    font-family: Helvetica Neue LT Std, sans-serif;
-    font-size: 13px;
+    width: 80px;
+    font: 13px "Helvetica";
     color: #828282;
     border-color: #d9d9d9;
     border-width: 1px;
@@ -231,8 +218,7 @@ main {
 
 #exclude1, #exclude2 {
 
-    font-family: Arial, sans-serif;
-    font-size: 13px;
+    font: 13px "Arial";
 }
 
 .pattern {
@@ -241,7 +227,7 @@ main {
 }
 
 .table td:first-child {
-    font-family: Helvetica Neue LT Std, sans-serif;
+    font-family: "Helvetica";
     font-size: 13px;
     color: #828282;
     border-color: #d9d9d9;
@@ -262,4 +248,62 @@ main {
 .days {
     /*paddingi*/
 
+}
+
+/*footer--------------------------------------*/
+.above-footer {
+    height: 45px;
+    width: 978px;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    width: 978px;
+    height: 190px;
+}
+
+.footer-left h4 {
+    color: #828282;
+    font: 28px "Helvetica";
+    font-weight: 600;
+    width: 305px;
+    padding-top: 11px;
+    padding-bottom: 21px;
+}
+
+.footer-left p {
+    color: #828282;
+    font: 15px "Arial";
+    padding-bottom: 19px;
+}
+
+.footer-center {
+    width: 367px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #e1e1e1;
+    border-top: none;
+    border-bottom: none;
+}
+
+.footer-center h4 {
+
+    font: 28px "Helvetica";
+    font-weight: 600;
+    color: #828282;
+    padding-top: 11px;
+    padding-left: 51px;
+
+
+}
+
+.footer-center p {
+   color: #828282;
+    font: 15px "Arial";
+    padding-top: 20px;
+    padding-left: 51px;
+}
+
+.footer-right {
+    width: 305px;
 }
