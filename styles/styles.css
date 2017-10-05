@@ -94,9 +94,11 @@ main {
 }
 
 .week-progress h5 {
-    padding-top: 33px;
+    padding-top: 21px;
+    padding-bottom: 14px;
     text-transform: uppercase;
-    font-size: 9px;
+    font: 9px "Helvetica";
+    font-weight: 500;
     color: #bdbdbd;
 }
 
@@ -110,6 +112,7 @@ main {
 
 }
 
+
 .week-count img {
     padding-top: 38px;
 
@@ -122,7 +125,7 @@ main {
 
 .week-count h2 {
     text-align: center;
-    font-size: 48px;
+    font: 48px "Helvetica";
     color: #ff801a;
     padding: 38px 42px 36px 46px;
 
@@ -213,7 +216,7 @@ main {
 /*font-size: 13pt;*/
 /*}*/
 
-#exclude1, #exclude2 {
+#exclude1, #exclude2 , #exclude3{
 
     font: 13px "Arial";
 }
@@ -229,6 +232,11 @@ main {
     border-color: #d9d9d9;
     border-width: 1px;
     border-left: 0px;
+}
+
+table tr td:nth-child(2) {
+    color: red;
+
 }
 
 .yogurt {
