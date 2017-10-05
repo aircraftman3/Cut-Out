@@ -292,6 +292,7 @@ footer {
     font-weight: 600;
     color: #828282;
     padding-top: 11px;
+    padding-bottom: 20px;
     padding-left: 51px;
 
 
@@ -300,8 +301,17 @@ footer {
 .footer-center p {
    color: #828282;
     font: 15px "Arial";
-    padding-top: 20px;
+    padding-bottom: 19px;
     padding-left: 51px;
+}
+
+.ios {
+    padding-left: 49px;
+
+}
+
+.android {
+    padding-right:83px;
 }
 
 .footer-right {

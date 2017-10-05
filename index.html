@@ -9,22 +9,22 @@
 <body>
 <header>
     <div class="header-inner">
-    <div class="left-space">
-    </div>
-    <div class="header-items">
-        <nav>
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Recipes</a></li>
-                <li><a href="#">Challenge</a></li>
-            </ul>
-        </nav>
-    </div>
-    <div class="header-right">
+        <div class="left-space">
+        </div>
+        <div class="header-items">
+            <nav>
+                <ul>
+                    <li><a href="#">Dashboard</a></li>
+                    <li><a href="#">Recipes</a></li>
+                    <li><a href="#">Challenge</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
 
-        <img id="profile-picture" src="images/profile-picture.png"/>
-        <p>Olivia Wilde</p>
-    </div>
+            <img id="profile-picture" src="images/profile-picture.png"/>
+            <p>Olivia Wilde</p>
+        </div>
     </div>
 </header>
 <main>
@@ -47,24 +47,29 @@
             <img src="images/arrow-right.png" height="44" width="26" onclick="plusDivs(+1)"/>
 
             <script>
-            var slideIndex = 1;
-            showDivs(slideIndex);
+              var slideIndex = 1;
+              showDivs(slideIndex);
 
-            function plusDivs(n) {
-            showDivs(slideIndex += n);
-            }
+              function plusDivs(n) {
+                showDivs(slideIndex += n);
+              }
 
-            function showDivs(n) {
-            var i;
-            var x = document.getElementsByClassName("slider");
-            if (n > x.length) {slideIndex = 1}
-            if (n < 1) {slideIndex = x.length} ;
-            for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-            }
-            x[slideIndex-1].style.display = "block";
-            }
-             </script>
+              function showDivs(n) {
+                var i;
+                var x = document.getElementsByClassName("slider");
+                if (n > x.length) {
+                  slideIndex = 1
+                }
+                if (n < 1) {
+                  slideIndex = x.length
+                }
+                ;
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";
+                }
+                x[slideIndex - 1].style.display = "block";
+              }
+            </script>
         </div>
         <div class="protein-option">
             <h5>Select your protein options</h5>
@@ -73,7 +78,7 @@
                 <img src="images/protein-option2.png" style="padding: 15px 16px 0px 0px"/>
                 <img src="images/protein-option3.png" style="padding: 14px 17px 0px 0px"/>
                 <img src="images/protein-option41.png" style="padding: 12px 12px 0px 0px"/>
-                <img src="images/protein-option51.png" style="padding-top: 13px",/>
+                <img src="images/protein-option51.png" style="padding-top: 13px" ,/>
             </div>
         </div>
     </div>
@@ -92,7 +97,8 @@
                 <th class="days">day 70</th>
             </tr>
             <tr class="yogurt">
-                <td id="exclude1">Bod•ē Shake<img src="images/tick.png" style="padding: 8px 6px 0px 0px"><img src="images/drink10.png" width="85px" height="57px"></td>
+                <td id="exclude1">Bod•ē Shake<img src="images/tick.png" style="padding: 8px 6px 0px 0px"><img
+                        src="images/drink10.png" width="85px" height="57px"></td>
                 <td>Bod•ē Shake<img src="images/drink10.png" width="85px" height="57px"></td>
                 <td>Bod•ē Shake<img src="images/drink10.png" width="85px" height="57px"></td>
                 <td>Bod•ē Shake<img src="images/drink10.png" width="85px" height="57px"></td>
@@ -106,11 +112,14 @@
                 <td>Ham and Swiss Roll Ups</td>
                 <td>Grilled Steak (HC)</td>
                 <td>Ham and Swiss
-                    Roll Ups</td>
+                    Roll Ups
+                </td>
                 <td>Ham and Swiss
-                    Roll Ups</td>
+                    Roll Ups
+                </td>
                 <td>Grilled Steak
-                    (HC)</td>
+                    (HC)
+                </td>
             </tr>
             <tr>
                 <td class="pattern"><span style="font-weight: bold">12:00</span>PM</td>
@@ -126,35 +135,43 @@
                 <td>Bod•ē Burn<img src="images/png" style="padding: 8px 6px 0px 0px">
                     with Mozzarella
                     and Tomato
-                    Slices</td>
+                    Slices
+                </td>
                 <td>Bod•ē Burn with
                     Mozzarella and
-                    Tomato Slices</td>
+                    Tomato Slices
+                </td>
                 <td>Bod•ē Burn and
                     Whole-Wheat
                     English Muffin
-                    with Butter Spray</td>
+                    with Butter Spray
+                </td>
                 <td>Bod•ē Burn with
                     Mozzarella and
-                    Tomato Slices</td>
+                    Tomato Slices
+                </td>
                 <td>Bod•ē Burn with
                     Mozzarella and
-                    Tomato Slices</td>
+                    Tomato Slices
+                </td>
                 <td>Bod•ē Burn and
                     Whole-Wheat
                     English Muffin
-                    with Butter Spray</td>
+                    with Butter Spray
+                </td>
             </tr>
             <tr>
                 <td rowspan="2" class="pattern"><span style="font-weight: bold">6:00</span>PM</td>
                 <td>Turkey Melt</td>
                 <td>Turkey Melt</td>
                 <td>Garlic Lime
-                    Chicken (HC)</td>
+                    Chicken (HC)
+                </td>
                 <td>Turkey Melt</td>
                 <td>Turkey Melt</td>
                 <td>Garlic Lime
-                    Chicken (HC)</td>
+                    Chicken (HC)
+                </td>
             </tr>
             <tr class="short">
                 <td id="exclude2">LOW-CARB</td>
@@ -191,14 +208,16 @@
         <h4>Bod•e Trainer in<br> your pocket</h4>
         <p>Lorem ipsum dolor sit amet, consect <br> uradipiscing elit. Integer aliquet.</p>
 
-        <img src="images/ios.png" height="35" width="97"/></div>
+        <img class="ios" src="images/ios.png" height="35" width="97"/>
+        <img class="android" src="images/android.png" height="35" width="127"/>
+    </div>
 
-    <img src="images/android.png" height="35" width="127"/>
+
     <div class="footer-right">
         <h4>Frequently Asked Questions</h4>
         <p>Lorem ipsum dolor sit amet, consect</p>
-        <button>Read FAQs</button>
-    </div>
+
+        <img src="images/read-faqs.png" height="35" width="128"/></div>
 </footer>
 </body>
 </html>
