@@ -314,6 +314,17 @@ footer {
     padding-right:83px;
 }
 
-.footer-right {
+.footer-right h4{
     width: 305px;
+    color: #828282;
+    font: 28px "Helvetica";
+    font-weight: 600;
+        padding-top: 11px;
+    padding-bottom: 24px;
+}
+
+.footer-right p {
+    color: #828282;
+    font: 15px "Arial";
+    padding-bottom: 19px;
 }
